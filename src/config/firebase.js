@@ -2,19 +2,21 @@
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { getAuth } from "firebase/auth";
+import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBw7Xx863zf_32iOAxBupvgRQ1hm6TSPWY",
-    authDomain: "react-firebase-7.firebaseapp.com",
-    projectId: "react-firebase-7",
-    storageBucket: "react-firebase-7.appspot.com",
-    messagingSenderId: "86073070240",
-    appId: "1:86073070240:web:2415066211c4cbbf1defc5",
-    measurementId: "G-5R806H5J7W"
+  apiKey: "AIzaSyCRu_2RTWw19ut2MhAKFJ8ha8G4D9QFkrI",
+  authDomain: "react-food-app-703d1.firebaseapp.com",
+  projectId: "react-food-app-703d1",
+  storageBucket: "react-food-app-703d1.appspot.com",
+  messagingSenderId: "857479023864",
+  appId: "1:857479023864:web:d731069df53556db00ff0d",
+  measurementId: "G-MBLSZRRTVF",
 };
 
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 const auth = getAuth(app);
+const firestore = getFirestore(app);
 
-export { analytics, auth }
+export { analytics, auth, firestore };

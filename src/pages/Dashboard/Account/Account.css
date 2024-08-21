@@ -1,0 +1,104 @@
+/* General Styles */
+.account-card {
+    box-shadow: rgba(208, 184, 144, 0.83) 0px 30px 60px -12px inset,
+      rgba(228, 161, 36, 0.955) 0px 18px 36px -18px inset;
+    background-color: #d4660c;
+    color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+  }
+  
+  .account-card:hover {
+    transform: scale(1.02);
+  }
+  
+  .account-avatar {
+    background-color: #000;
+    border: 2px solid #fff;
+    transition: background-color 0.3s ease;
+  }
+  
+  .account-avatar:hover {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  .account-title {
+    color: #fff;
+    font-size: 24px;
+  }
+  
+  .account-text {
+    color: #fff;
+    font-size: 14px;
+  }
+  
+  .account-divider {
+    background-color: #fff;
+    margin: 20px 0;
+  }
+  
+  .account-info {
+    color: #fff;
+    font-size: 14px;
+  }
+  
+  .account-logout-button {
+    background-color: #000;
+    border-color: #fff;
+    color: #fff;
+    margin-top: 20px;
+    width: 100%;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .account-logout-button:hover {
+    background-color: #fff;
+    color: #000;
+    border-color: #000;
+  }
+  
+  /* Animation for Card */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Responsive Font Sizes */
+  @media (max-width: 576px) {
+    .account-title {
+      font-size: 20px;
+    }
+  
+    .account-text,
+    .account-info {
+      font-size: 12px;
+    }
+  
+    .account-avatar {
+      size: 60px;
+    }
+  }
+  
+  @media (min-width: 576px) and (max-width: 768px) {
+    .account-title {
+      font-size: 22px;
+    }
+  
+    .account-text,
+    .account-info {
+      font-size: 13px;
+    }
+  
+    .account-avatar {
+      size: 70px;
+    }
+  }
+  
